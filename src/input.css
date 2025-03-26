@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fajar-red: #d91e3a;
+}
