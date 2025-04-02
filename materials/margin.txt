@@ -1,0 +1,14 @@
+margin digunakan untuk memberikan jarak antara elemen dengan elemen lain di sekitarnya
+
+m-* -> berarti margin untuk semua sisi
+
+kita juga bisa menggunakan spesifik margin di sisi tertentu:
+- mt-* : margin top
+- mb-* : margin bottom
+- ml-* : margin left
+- mr-* : margin right
+- mx-* : margin horizontal
+- my-* : margin vertikal
+
+
+default kenaikan margin adalah 16px, misal m-1 berarti marginnya di 16px
