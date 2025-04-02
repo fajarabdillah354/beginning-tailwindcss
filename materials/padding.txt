@@ -1,0 +1,14 @@
+padding digunakan untuk memberikan jarak antara konten di dalam elemen dan tepi elemen tersebut
+
+p-* -> berarti padding di semua sisi
+
+kita juga bisa menggunakan spesifik padding di sisi tertentu:
+
+- pt-* : padding top
+- pb-* : padding bottom
+- pl-* : padding left
+- pr-* : padding right
+- px-* : padding horizontal (left + right)
+- py-* : padding vertikal (top + bottom)
+
+default nilai dari padding adalah 4px 
