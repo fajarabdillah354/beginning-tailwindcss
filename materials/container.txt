@@ -1,0 +1,10 @@
+pada tailwind container digunakan untuk menentukan ukuran suatu elemen
+beberapa ukuran yang sering digunakan adalah 
+1. sm (small) -> 640px
+2. md (medium) -> 768px
+3. lg (large) -> 1024px
+4. xl (extra-large) -> 1280px
+5. 2xl (extra extra large) -> 1536px
+6. jika kita ingin membuat elemen kita berada di tengah ukuran device kita bisa menggunaka mx-auto
+
+ukuran itu semua adalah ukuran max dari tiap-tiap tampilan
