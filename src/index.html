@@ -3,7 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+  </style>
+  <style type="text/tailwindcss">
+    :root{
+      --my-padding: 22.5px;
+    }
+
+    @theme{
+      --color-fajar: #3d943a;
+      --font-display : "Lobster", sans-serif;
+    }
+  </style>
 </head>
 <body>
   <div class="p-10 w-full text-center m-auto">
@@ -11,17 +25,174 @@
       Hello world!
     </h1>
 
-  <div class="w-full h-30 rounded my-5 bg-linear-45 from-fajar-red to-blue-500"></div>
+  <div class="w-full h-30 rounded my-5 bg-linear-45 from-fajar to-blue-500"></div>
 
-  <div class="w-full h-30 rounded my-5 bg-linear-45/srgb from-fajar-red to-blue-500"></div>
+  <div class="w-full h-30 rounded my-5 bg-linear-45/srgb from-fajar to-pink-500"></div>
 
-  <div class="w-full h-30 rounded my-5 bg-linear-45/oklch from-fajar-red to-blue-500"></div>
+  <div class="w-full h-30 rounded my-5 bg-linear-45/oklch from-fajar to-yellow-500"></div>
 
   <div class="flex justify-center my-5 perspective-near" >
     <img src="image/fotoku.jpeg" alt="fotoku" class="w-50 rounded rotate-x-80 hover:rotate-x-0 transition-all">
   </div>
 
+
+  <!-- CONTAINER -->
+  <div class="container bg-cyan-900 text-amber-50 mx-auto">
+    INI CONTAINER
+  </div>
+
+
   
 </div>
+<!-- MATERI PADDING -->
+<div class="bg-teal-400 mt-6 px-2 py-3 mb-4" >PADDING 1</div>
+
+<!-- contoh padding menggunakan nilai sendiri -->
+<div class="bg-blue-400 py-[40.5px] mb-4" >PADDING 2</div>
+
+<!-- contoh membuat padding dari css variable  -->
+<div class="bg-amber-700 mb-3 px-(--my-padding)"> PADDING 3</div>
+
+
+<!-- MATERI MARGIN -->
+<!-- dalam margin kita juga bisa menggunakan css variable sama seperti padding -->
+<div class="bg-yellow-400 text-blue-800 m-9">MARGIN</div>
+
+
+<!-- MATERI TYPOGRAPHY -->
+
+<!-- 1. font family -->
+
+<div class="font-sans font-bold">
+  hello there 
+</div>
+<div class="font-mono font-bold">
+  hello there 
+</div>
+<div class="font-serif font-bold">
+  hello there 
+</div>
+
+<!-- contoh penggunaan font dari css variable -->
+<div class="font-display">
+  fajar abdillah ahmad
+</div>
+
+<!-- 2. font size -->
+<div class="text-xs">font size</div>
+<div class="text-lg">font size</div>
+<div class="text-xl">font size</div>
+<div class="text-2xl">font size</div>
+
+
+
+<!-- 3. line height -->
+<!-- untuk mengatur jarak atas bawah antara text -->
+<div class="mb-7 text-base/2 bg-teal-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo fuga dolor, odio omnis iusto nesciunt minus voluptatum provident quod molestiae. Quis iste doloremque cum, ipsam odit voluptatem excepturi nesciunt?</div>
+
+<div class="mb-7 text-base/9 bg-amber-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque illo fuga dolor, odio omnis iusto nesciunt minus voluptatum provident quod molestiae. Quis iste doloremque cum, ipsam odit voluptatem excepturi nesciunt?</div>
+
+<!-- 4. font color -->
+<div class="text-cyan-400">
+  Hello world
+</div>
+
+<!-- 5. font weight -->
+<div class="font-extralight">
+  font weight
+</div>
+<div class="font-thin">
+  font weight
+</div>
+<div class="font-light">
+  font weight
+</div>
+<div class="font-extrabold">
+  font weight
+</div>
+<div class="font-black">
+  font weight
+</div>
+
+<!-- 6. font style -->
+<!-- defaultnya adalah non italic -->
+<div class="italic">font style</div>
+
+<!-- 7. text decoration -->
+<div class="overline">this is overline</div>
+<div class="line-through decoration-red-700">this is <line-through></line-through></div>
+<div class="underline mb-4">this is underline</div>
+
+<!-- 8. letter spacing -->
+<!-- adalah jarak antara huruf dan huruf -->
+<div class="tracking-tighter">letter spacing 1</div>
+<div class="tracking-wider">letter spacing 2</div>
+<div class="-tracking-widest">letter spacing 3</div>
+
+
+
+<!-- MATERI WIDTH AND HEIGHT -->
+<div class="bg-green-400 w-50">Elemen 1</div>
+<div class="bg-cyan-900 h-screen w-1/3">Elemen 2</div>
+
+<div class="w-96 bg-red-300">w-96</div>
+<div class="w-80 bg-red-300">w-80</div>
+<div class="w-64 bg-red-300">w-64</div>
+<div class="w-48 bg-red-300">w-48</div>
+<div class="w-40 bg-red-300">w-40</div>
+<div class="w-32 bg-red-300">w-32</div>
+<div class="w-24 bg-red-300">w-24</div>
+
+
+
+
+<div class="w-xl bg-yellow-200">w-xl</div>
+<div class="w-lg bg-yellow-200">w-lg</div>
+<div class="w-md bg-yellow-200">w-md</div>
+<div class="w-sm bg-yellow-200">w-sm</div>
+<div class="w-xs bg-yellow-200">w-xs</div>
+<div class="w-2xs bg-yellow-200">w-2xs</div>
+<div class="w-3xs bg-yellow-200">w-3xs</div>
+
+
+<!-- MATERI BACKGROUND -->
+<!-- contoh background fixed -->
+<div class="w-xl h-100 bg-contain bg-no-repeat mb-7 bg-[url(https://images.unsplash.com/photo-1741851374430-d242e0dcd70c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-fixed">
+  
+</div>
+<h1 class=" text-black">
+  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum dicta ab accusamus id minima quidem debitis laborum placeat, aliquid tempore. Hic, saepe? Vitae ipsam, incidunt magnam iure corrupti omnis nulla. lo
+</h1>
+
+
+<!-- contoh background yang local dimana background akan fix -->
+<div class="bg-auto mb-7 bg-[url(https://images.unsplash.com/photo-1741851374430-d242e0dcd70c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-local">
+  <h2 class="text-white">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repudiandae, quam velit obcaecati nulla eius perspiciatis omnis asperiores quasi libero at ea et harum est, doloribus repellat maiores, sunt placeat!
+  </h2>
+</div>
+
+
+<div class="bg-cover mb-7 bg-[url(https://images.unsplash.com/photo-1741851374430-d242e0dcd70c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-scroll text-base/9">
+  <h2 class="text-white">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repudiandae, quam velit obcaecati nulla eius perspiciatis omnis asperiores quasi libero at ea et harum est, doloribus repellat maiores, sunt placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis error pariatur sit quas doloribus accusantium sequi nam iste? Voluptate ipsa porro incidunt quibusdam nulla ea sapiente officiis facilis! Laborum, placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minus minima incidunt voluptas at hic odit eligendi cumque eius nisi modi placeat dolorem quisquam sapiente ullam rem inventore error. Sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, iste, mollitia culpa accusamus aspernatur beatae nam nobis ipsa perspiciatis magni itaque corporis quo impedit quaerat, recusandae deserunt id incidunt ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus reprehenderit doloremque, rem assumenda culpa ab debitis tempora delectus ipsum reiciendis neque dolor quidem in, animi, consequuntur nihil iure dicta quaerat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid a
+  </h2>
+</div>
+
+<div class="h-[400px] m-4 bg-linear-to-br from-yellow-500 to-blue-800">background linear</div>
+
+<div class="h-[400px] m-4 bg-linear-to-r from-yellow-500 to-blue-800">background linear</div>
+
+<div class="h-[400px] m-4 bg-linear-to-l from-yellow-500 to-blue-800">background linear</div>
+
+<div class="size-18 rounded-full bg-radial from-pink-400 from-40% to-fuchsia-700"></div>
+<div class="size-18 rounded-full bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%"></div>
+<div class="size-18 rounded-full bg-radial-[at_25%_25%] from-white to-zinc-900 to-75%"></div>
+
+<div class="size-24 rounded-full bg-conic from-blue-600 to-sky-400 to-50%"></div>
+<div class="size-24 rounded-full bg-conic-180 from-indigo-600 via-indigo-50 to-indigo-600"></div>
+<div class="size-24 rounded-full bg-conic/decreasing from-violet-700 via-lime-300 to-violet-700"></div>
+
+
 </body>
 </html>
