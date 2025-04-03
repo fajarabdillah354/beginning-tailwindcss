@@ -1,0 +1,2 @@
+dalam tailwindcss, kita dapat dengan mudah mengatur properti border dengan utility class border- 
+dan border-radius dengan rounded- menggunakan utility classes. ini membantu kita untuk menambahkan gaya seperti garis tepi, ketebalan, warna, dan sudut yang bulat tanpa perlu menulis kode css manual.
