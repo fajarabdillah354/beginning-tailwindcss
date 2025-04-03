@@ -1,0 +1,4 @@
+Width dan Height
+
+- Width digunakan untuk mengatur lebar dari sebuah elemen, Tailwindcss menyediakan banyak opsi ukuran, mulai dari skala pixel, persentese, hingga fraksional otomatis
+- Height digunakan untuk mengatur tinggi dari sebuah elemen, sama seperti Width, Height juga tersedia dalam berbagai ukuran
