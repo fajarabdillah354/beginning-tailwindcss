@@ -1,0 +1,1 @@
+adalah bagian penting dalam desain web karena memengaruhi cara pengguna membaca dan memahami konten. Tailwindcss menyediakan berbagai utility classes yang memudahkan kita untuk mengatur font size, font weight, text aligment, line height, dan decoration
